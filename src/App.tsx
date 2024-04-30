@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './App.css';
 
 function App() {
+  const navigate = useNavigate();
   return (
     <>
       <div>
@@ -11,7 +11,9 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/profile">Profile page</Link>
+              <button onClick={()=>navigate("/profile")}>
+                Go to profile!!
+              </button>
             </li>
           </ul>
         </nav>

@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 function Mario() {
@@ -6,6 +5,7 @@ function Mario() {
     <div>
       <h2>Hi I'm Mario Bross</h2>
       <Link to="/">Click here to main page</Link>
+
     </div>
   );
 }
